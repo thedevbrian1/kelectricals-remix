@@ -40,7 +40,7 @@ export default function Projects() {
 
     return (
         <main className="px-8 sm:px-0 sm:w-4/5 2xl:max-w-7xl mx-auto space-y-5 lg:space-y-8 mt-24">
-            <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading">Projects</h1>
+            <h1 className="font-bold text-4xl md:text-5xl xl:text-6xl font-heading">Projects</h1>
             <Heading title='Completed projects' align='left' />
             <div className="max-w-xs sm:max-w-2xl lg:max-w-3xl overflow-x-auto">
                 <table className="w-full border">

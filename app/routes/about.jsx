@@ -72,7 +72,7 @@ export default function About() {
     return (
         <main className="">
             <div className="px-8 sm:px-0 sm:w-4/5 2xl:max-w-7xl mx-auto space-y-5 lg:space-y-8 mt-24">
-                <h1 className="font-bold font-heading text-3xl md:text-4xl lg:text-5xl">About us</h1>
+                <h1 className="font-bold font-heading text-4xl md:text-5xl xl:text-6xl">About us</h1>
                 <div className="space-y-3 text-black font-body">
                     <p>
                         Kihara Electricals started operations in the year 1998, offering top class electrical installation services and consultancy. The company was incorporated to a Limited Liability Company in 2009. Our headquarter office is in Devkesh plaza, Ruiru town. Our subsidiary offices are in Nairobi R.Towers.

@@ -37,7 +37,7 @@ function Hero() {
     <section className="h-screen w-full bg-[url('/solar-panel.jpg')] bg-center bg-cover bg-no-repeat">
       <div className="w-full h-full bg-gradient-to-b lg:bg-gradient-to-r from-[#333333] to-[#DD1818]/30 text-white flex flex-col justify-center gap-y-5 lg:gap-y-7 px-5 md:px-10">
         <div className="space-y-2 lg:space-y-3 xl:max-w-4xl">
-          <h1 className="font-bold font-heading text-3xl md:text-5xl xl:text-6xl">
+          <h1 className="font-bold font-heading text-4xl md:text-5xl xl:text-6xl">
             Power your house with <span className="text-green-500">renewable</span> energy
           </h1>
           <p className="text-lg md:text-2xl font-body">Do you wish to install solar panels alongside your main grid?</p>
@@ -87,7 +87,7 @@ function SampleProjects() {
   return (
     <section id="projects" className="w-full bg-gradient-to-b from-[#c31432] to-[#240b36]">
       <div className="px-5 sm:px-0 sm:w-4/5 mx-auto py-16 lg:py-24 flex flex-col items-center gap-y-5">
-        <p className="text-white font-bold font-heading text-2xl md:text-3xl lg:text-6xl text-center">We have successfully completed <span className="text-green-500">100+</span> projects</p>
+        <p className="text-white font-bold font-heading text-3xl md:text-4xl xl:text-5xl text-center">We have successfully completed <span className="text-green-500">100+</span> projects</p>
         <div className="w-full lg:w-3/4 aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 relative mt-8 px-4 md:px-0 mb-4">
           <Carousel />
         </div>
