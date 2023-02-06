@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import CountUp from "react-countup";
 import Heading from "~/components/Heading";
 import { MeterIcon, PoleIcon, SolarIcon } from "~/components/Icon";
 import Testimonial from "~/components/Testimonial";
@@ -87,7 +88,7 @@ function SampleProjects() {
   return (
     <section id="projects" className="w-full bg-gradient-to-b from-[#c31432] to-[#240b36]">
       <div className="px-5 sm:px-0 sm:w-4/5 mx-auto py-16 lg:py-24 flex flex-col items-center gap-y-5">
-        <p className="text-white font-bold font-heading text-3xl md:text-4xl xl:text-5xl text-center">We have successfully completed <span className="text-green-500">100+</span> projects</p>
+        <p className="text-white font-bold font-heading text-3xl md:text-4xl xl:text-5xl text-center">We have successfully completed <span className="text-green-500"><CountUp end={100} enableScrollSpy={true} scrollSpyDelay={50} scrollSpyOnce={true} />+</span> projects</p>
         <div className="w-full lg:w-3/4 aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-9 relative mt-8 px-4 md:px-0 mb-4">
           <Carousel />
         </div>

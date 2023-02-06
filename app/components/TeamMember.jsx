@@ -1,7 +1,8 @@
 import { Link } from "@remix-run/react";
 import { useState } from "react";
+import ListItem from "./ListItem";
 
-export default function TeamMember() {
+export default function TeamMember({ name, title, image, qualifications }) {
     const [isFlipped, setIsFlipped] = useState(false);
 
     return (
@@ -28,9 +29,10 @@ export default function TeamMember() {
                 ? (<div className="h-full p-8">
                     <h3 className="text-xl font-medium text-gray-900 dark:text-white font-heading">Qualifications</h3>
                     <ul className="text-black-olive mt-2 text-left text-sm lg:text-base font-body">
+                        {qualifications.map((qualification) => (<ListItem listItem={qualification} key={qualification.id} />))}
+                        {/* <li>Higher Diploma in Electrical/Electronics Engineering</li>
                         <li>Higher Diploma in Electrical/Electronics Engineering</li>
-                        <li>Higher Diploma in Electrical/Electronics Engineering</li>
-                        <li>Higher Diploma in Electrical/Electronics Engineering</li>
+                        <li>Higher Diploma in Electrical/Electronics Engineering</li> */}
                     </ul>
                     <button
                         onClick={() => setIsFlipped(false)}
@@ -40,9 +42,9 @@ export default function TeamMember() {
                     </button>
                 </div>)
                 : (<div className="flex flex-col items-center justify-center pb-10">
-                    <img className="w-24 h-24 mb-3 rounded-full  mt-8" src="/person.png" alt="Bonnie image" />
-                    <h3 className="mb-1 text-xl font-medium font-heading text-gray-900 dark:text-white">William Kihara</h3>
-                    <span className="text-sm font-body text-gray-500 dark:text-gray-400 font-semibold">CEO</span>
+                    <img className="w-24 h-24 mb-3 rounded-full  mt-8" src={`/${image}`} alt="Bonnie image" />
+                    <h3 className="mb-1 text-xl font-medium font-heading text-gray-900 dark:text-white">{name}</h3>
+                    <span className="text-sm font-body text-gray-500 dark:text-gray-400 font-semibold">{title}</span>
                     <div className="flex mt-4  md:mt-6">
                         {/* <Link to="/about" className="underline text-gray-500 hover:text-gray-700 ">
                     View details

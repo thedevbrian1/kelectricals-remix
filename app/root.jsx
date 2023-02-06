@@ -41,7 +41,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[url('/endless-constellation.svg')] bg-center">
+      <body className="bg-[url('/endless-constellation.svg')] bg-center dark:bg-gray-700 dark:bg-blend-overlay">
+        {/* TODO: Support dark mode */}
         <header className="flex justify-between items-center md:px-4 2xl:max-w-7xl mx-auto">
           <div className="w-20 h-20">
             <img

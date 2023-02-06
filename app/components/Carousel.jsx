@@ -7,7 +7,7 @@ import { Backward, Forward, Pause, Play } from "./Icon";
 const slides = [
     {
         img: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWxlY3RyaWNpYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: "Lagoon Nebula (Visible-light View)",
+        title: "Alliance High School classroom",
         content: (
             <p>
                 At the center of the photo, a monster young
@@ -21,7 +21,7 @@ const slides = [
     },
     {
         img: 'https://images.unsplash.com/photo-1618522285348-1357236b7121?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fGVsZWN0cmljaWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-        title: "Bubble Nebula (NGC 7635)",
+        title: "Catholic Church Kitengela",
         content: (
             <p>
                 For the 26th birthday of NASA's Hubble Space
@@ -38,7 +38,7 @@ const slides = [
     },
     {
         img: 'https://images.unsplash.com/photo-1509390144018-eeaf65052242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGVsZWN0cmljaWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-        title: "Eagle Nebula",
+        title: "Nairobi Primary School",
         content: (
             <p>
                 The Eagle Nebula pillars are bathed in the

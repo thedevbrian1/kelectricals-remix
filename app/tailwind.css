@@ -1182,6 +1182,16 @@ select {
   background-color: rgb(51 51 51 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/endless-constellation\.svg\'\)\] {
   background-image: url('/endless-constellation.svg');
 }
@@ -1362,9 +1372,9 @@ select {
   font-family: Quattrocento;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-sm {
@@ -1377,9 +1387,14 @@ select {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-lg {
@@ -1390,11 +1405,6 @@ select {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1473,6 +1483,10 @@ select {
 
 .opacity-90 {
   opacity: 0.9;
+}
+
+.bg-blend-overlay {
+  background-blend-mode: overlay;
 }
 
 .shadow-md {
@@ -1649,6 +1663,31 @@ select {
     background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-gray-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-blue-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-gray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+
+  .dark\:from-\[\#A40606\] {
+    --tw-gradient-from: #A40606;
+    --tw-gradient-to: rgb(164 6 6 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .dark\:to-\[\#D98324\] {
+    --tw-gradient-to: #D98324;
+  }
+
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1657,6 +1696,20 @@ select {
   .dark\:text-gray-400 {
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-\[\#D8E9A8\] {
+    --tw-text-opacity: 1;
+    color: rgb(216 233 168 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-\[\#a6a29b\] {
+    --tw-text-opacity: 1;
+    color: rgb(166 162 155 / var(--tw-text-opacity));
+  }
+
+  .dark\:bg-blend-overlay {
+    background-blend-mode: overlay;
   }
 
   .dark\:hover\:border-gray-700:hover {
@@ -1833,11 +1886,6 @@ select {
     padding-right: 0px;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1971,19 +2019,9 @@ select {
     padding-bottom: 6rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .lg\:text-6xl {
@@ -2005,9 +2043,9 @@ select {
     max-width: 56rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .xl\:text-6xl {
@@ -2015,9 +2053,9 @@ select {
     line-height: 1;
   }
 
-  .xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

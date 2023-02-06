@@ -72,8 +72,8 @@ export default function About() {
     return (
         <main className="">
             <div className="px-8 sm:px-0 sm:w-4/5 2xl:max-w-7xl mx-auto space-y-5 lg:space-y-8 mt-24">
-                <h1 className="font-bold font-heading text-4xl md:text-5xl xl:text-6xl">About us</h1>
-                <div className="space-y-3 text-black font-body">
+                <h1 className="font-bold font-heading text-4xl md:text-5xl xl:text-6xl text-black dark:text-[#a6a29b]">About us</h1>
+                <div className="space-y-3 text-black dark:text-[#a6a29b] font-body">
                     <p>
                         Kihara Electricals started operations in the year 1998, offering top class electrical installation services and consultancy. The company was incorporated to a Limited Liability Company in 2009. Our headquarter office is in Devkesh plaza, Ruiru town. Our subsidiary offices are in Nairobi R.Towers.
                     </p>
@@ -174,15 +174,34 @@ export default function About() {
 }
 
 function Team() {
+    const qualifications = [
+        {
+            text: 'Higher Diploma in Electrical/Electronics Engineering',
+            id: 1,
+        },
+        {
+            text: 'Higher Diploma in Electrical/Electronics Engineering',
+            id: 2,
+        },
+        {
+            text: 'Higher Diploma in Electrical/Electronics Engineering',
+            id: 3,
+        },
+        {
+            text: 'Higher Diploma in Electrical/Electronics Engineering',
+            id: 4,
+        }
+    ];
+
     return (
-        <section className="space-y-4 bg-gray-50 mt-16 lg:mt-24" id="team">
+        <section className="space-y-4 bg-gray-50 dark:bg-gray-200 mt-16 lg:mt-24" id="team">
             <div className="px-12 sm:px-0 sm:w-4/5 2xl:max-w-7xl mx-auto pt-16 pb-16 lg:pt-24 lg:pb-24 text-center">
                 <Heading title='Meet our team' />
                 <div className="lg:px-6 grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4  justify-items-center gap-5 mt-4 lg:mt-6">
-                    <TeamMember />
-                    <TeamMember />
-                    <TeamMember />
-                    <TeamMember />
+                    <TeamMember name='William Kihara' title='CEO' image={'person.png'} qualifications={qualifications} />
+                    <TeamMember name='Brian Mwangi' title='CTO' image={'person.png'} qualifications={qualifications} />
+                    <TeamMember name='Mwaura' title='CFO' image={'person.png'} qualifications={qualifications} />
+                    <TeamMember name='William' title='Engineer' image={'person.png'} qualifications={qualifications} />
                 </div>
             </div>
         </section>
